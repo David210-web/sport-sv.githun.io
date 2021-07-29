@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de noticias de todo el mundo">
+    <meta name="author" content="David Castillo">
+    <meta name="keywords" content="futbol, El salvador, Deportes, Centroamerica, Concacaf">
+    <!-- Documentos javascript, css  y bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueris.css">
+    <!-- fuentes, iconos y demas elementos  -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- titulo e icono  -->
+    <title>Soccer C.A -Diario deportivo Online</title>
+</head>
+<body>
+    <!-- estructura del header -->
+    <header class="header" id="header">
+        <!-- encabezado  -->
+        <div class="encabezado bg-dark">
+            <div class="titulos">
+                <h1>
+                    SOCCER C.A
+                </h1>
+            </div>
+            <ul class="redes-sociales">
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-youtube' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-twitch' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/login.html">
+                        <i class='bx bx-user-circle' ></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="btn-menu">
+                <div class="menu-on">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="menu-off desactive">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- menu  -->
+        <nav class="menu-principal bg-primary">
+            <ul class="menu-lista">
+                <li>
+                    <a href="#">
+                        El Salvador
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Concacaf
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Europa
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Copa America
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Eurocopa
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Resultados
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Ultimas noticias
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- contenido principal  -->
+    <main class="contenido-principal" id="contenido-principal">
+        <!-- calendario de partidos (esta hecho en forma de slider) -->
+        <section class="calendario" id="calendario">
+            <!-- titulos de esta seccion  -->
+            <div class="calendario-titulo">
+                <h3>
+                    PARTIDOS
+                </h3>
+            </div>
+
+            <!-- slider de partidos  -->
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="item slider-active">
+                        <article class="partidos" id="partido1">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://4.bp.blogspot.com/-gjoT14eSW4c/WWwoAaHTr-I/AAAAAAABNCM/3S4jAdgazlQhjvYTZvO2v9QeXUBDT9IrQCLcBGAs/s1600/El%2BSalvador256x.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://2.bp.blogspot.com/-8Vq9YFCt2uE/WWxWb2WeK7I/AAAAAAABNOI/HsItrNeBw4Y2bpZTnFGY35OZ-KjWPRt3wCLcBGAs/s1600/Mexico256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>2/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido2">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://i.pinimg.com/originals/23/2a/a0/232aa066717881bd47b2e45959e49441.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://1.bp.blogspot.com/-pVA6neTTuYc/YFajUxZwUcI/AAAAAAABjBk/q-cfok5aURYw_5XkmFsy4gtmG4LCPnlqQCLcBGAsYHQ/s0/Republica%2BDominicana256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>2/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido3">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://1.bp.blogspot.com/-hwpJTfJS7N4/X9AtaMAxY6I/AAAAAAABheE/9A2byXqFU8MNvmf7r1mGDKf78GmyVAnygCLcBGAsYHQ/s0/Costa%2BRica256x.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://1.bp.blogspot.com/-iZtuQT6hoP0/WWwYKKV_CfI/AAAAAAABM90/wzl5q1oODrk-yL2yALAh1yGF2hhnZwPUwCLcBGAs/s1600/Colombia256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>2/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido4">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://1.bp.blogspot.com/-8GfpJ6pdgWk/YFqdcFgqK8I/AAAAAAABjCU/s1XcO2upbe4AMKSLhBtFn7DgGvO9kyeKQCLcBGAsYHQ/s0/Espana256x.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://1.bp.blogspot.com/-r-TkIjuOoh8/WWxf-PBrh5I/AAAAAAABNSg/nxwt9cDpBxAZi07qo2rxSk8P8IY6j_teACLcBGAs/s1600/Tahiti256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>2/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido5">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://4.bp.blogspot.com/-US9jH8NvAmw/VvNI30eBK-I/AAAAAAAABhc/UdA3GGSmVeAwI3jPgEWcuDzPdFM_PsRXg/s1600/Ecuador.PNG" alt="equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://i2.wp.com/imperiofutbolec.com/wp-content/uploads/2019/05/Chile256x.png?fit=256%2C256&ssl=1" alt="logo de equipo1">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>2/6/2021</time>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="item">
+                        <article class="partidos" id="partido6">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://i2.wp.com/imperiofutbolec.com/wp-content/uploads/2019/05/Chile256x.png?fit=256%2C256&ssl=1" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://4.bp.blogspot.com/-US9jH8NvAmw/VvNI30eBK-I/AAAAAAAABhc/UdA3GGSmVeAwI3jPgEWcuDzPdFM_PsRXg/s1600/Ecuador.PNG" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>4/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido7">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://1.bp.blogspot.com/-r-TkIjuOoh8/WWxf-PBrh5I/AAAAAAABNSg/nxwt9cDpBxAZi07qo2rxSk8P8IY6j_teACLcBGAs/s1600/Tahiti256x.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://1.bp.blogspot.com/-8GfpJ6pdgWk/YFqdcFgqK8I/AAAAAAABjCU/s1XcO2upbe4AMKSLhBtFn7DgGvO9kyeKQCLcBGAsYHQ/s0/Espana256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>4/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido8">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://1.bp.blogspot.com/-iZtuQT6hoP0/WWwYKKV_CfI/AAAAAAABM90/wzl5q1oODrk-yL2yALAh1yGF2hhnZwPUwCLcBGAs/s1600/Colombia256x.png" alt="logo de equipo1">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://1.bp.blogspot.com/-hwpJTfJS7N4/X9AtaMAxY6I/AAAAAAABheE/9A2byXqFU8MNvmf7r1mGDKf78GmyVAnygCLcBGAsYHQ/s0/Costa%2BRica256x.png" alt="logo de equipo2">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>4/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido9">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://1.bp.blogspot.com/-pVA6neTTuYc/YFajUxZwUcI/AAAAAAABjBk/q-cfok5aURYw_5XkmFsy4gtmG4LCPnlqQCLcBGAsYHQ/s0/Republica%2BDominicana256x.png" alt="">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://i.pinimg.com/originals/23/2a/a0/232aa066717881bd47b2e45959e49441.png" alt="logo de equipo1" alt="">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>4/6/2021</time>
+                            </div>
+                        </article>
+
+                        <article class="partidos" id="partido10">
+                            <div class="equipos">
+                                <div class="equipo1">
+                                    <img src="https://2.bp.blogspot.com/-8Vq9YFCt2uE/WWxWb2WeK7I/AAAAAAABNOI/HsItrNeBw4Y2bpZTnFGY35OZ-KjWPRt3wCLcBGAs/s1600/Mexico256x.png" alt="">
+                                </div>
+
+                                <div class="versus">
+                                    VS
+                                </div>
+
+                                <div class="equipo2">
+                                    <img src="https://4.bp.blogspot.com/-gjoT14eSW4c/WWwoAaHTr-I/AAAAAAABNCM/3S4jAdgazlQhjvYTZvO2v9QeXUBDT9IrQCLcBGAs/s1600/El%2BSalvador256x.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="hora">
+                                <time>4/6/2021</time>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="left-slide">
+                    <i class='bx bxs-chevron-left' ></i>
+                </div>
+
+                <div class="right-slide">
+                    <i class='bx bxs-chevron-right' ></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ultimas noticias (lo hare en grid) -->
+        <section class="ultimas-noticias bg-dark" id="ultimas noticias">
+            <!-- titulo de esta seccion  -->
+            <div class="noticias-titulos">
+                <h3>
+                    Ultimas noticias
+                </h3>
+            </div>
+            <!-- contenedor grid de esta seccio y sus respectivos hijos  -->
+            <div class="grid-container">
+                <a href="#" class="grid-item" id="item1">
+                    <article class="noticia1">
+                        <img src="imagenes/real madrid.jpg" alt="imagen de noticia 1">
+                        <div class="noticias-parrafo">
+                            <span class="categoria">
+                                Ultimas Noticias
+                            </span>
+                            <h2>
+                                Carlo Anchelotti Vuelve al madrid
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur necessitatibus optio praesentium nostrum<br>quam magnam totam sed, aut sapiente perspiciatis.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="grid-item" id="item2">
+                    <article class="noticia2">
+                        <img src="imagenes/selecta.jpg" alt="imagen de noticia 1">
+                        <div class="noticias-parrafo">
+                            <span class="categoria">
+                                Ultimas Noticias
+                            </span>
+                            <h2>
+                                Los convocados de Hugo Perez con la Seleccion
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur necessitatibus optio praesentium nostrum<br>quam magnam totam sed, aut sapiente perspiciatis.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="grid-item" id="item3">
+                    <article class="noticia3">
+                        <img src="imagenes/fc barcelona.jpg" alt="imagen de noticia 1">
+                        <div class="noticias-parrafo">
+                            <span class="categoria">
+                                Ultimas Noticias
+                            </span>
+                            <h2>
+                                Kun Aguero fichado por el Barcelona
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur necessitatibus optio praesentium nostrum<br>quam magnam totam sed, aut sapiente perspiciatis.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="grid-item" id="item4">
+                    <article class="noticia4">
+                        <img src="imagenes/copaAmerica.png" alt="imagen de noticia 1">
+                        <div class="noticias-parrafo">
+                            <span class="categoria">
+                                Ultimas Noticias
+                            </span>
+                            <h2>
+                                Copa America en brasil
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur necessitatibus optio praesentium nostrum<br>quam magnam totam sed, aut sapiente perspiciatis.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!-- archivos multimedia videos sacados de youtube -->
+        <section class="multimedia bg-dark">
+            <div class="multimedia-titulo">
+                <h3>
+                    Multimedia
+                </h3>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wEujsKtHwww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="flex-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3riinH_JHYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="flex-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iojsRmOoPw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <ul class="redes-aside">
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-youtube' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-twitch' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle' ></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer class="pie-de-pagina" id="pie-de-pagina">
+        <div class="footer-container d-flex aling-items-center">
+            <ul class="acerca-de">
+                <li class="d-flex flex-column mt-4">
+                    <a href="#">
+                        Politica de privacidad
+                    </a>
+                    <a href="#">
+                        Terminos y condiciones
+                    </a>
+                </li>
+                
+            </ul>
+    
+            <h2>
+                2021 DERECHOS RESERVADOS
+            </h2>
+    
+            <h3>
+                <a href="#">
+                    CONTACTAME
+                </a>
+            </h3>
+        </div>
+    </footer>
+    <!-- script de bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- script principal  -->
+    <script src="/javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*variable*/
+
+:root{
+    --dark-color: #000;
+    --blue-color: #1539F9;
+    --bone-color: #F7F7F7;
+    --gray-color: #C4C4C4;
+    --lightblack-color: #00000070;
+    --roboto-font: 'Roboto', sans-serif;
+    --monserrat:'Montserrat', sans-serif;
+}
+
+
+
+/*Parte del header*/
+
+/*Encabezado*/
+.encabezado{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: #fff;
+    background: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulos{
+    margin-left: 100px;
+}
+
+.titulos h1{
+    font-family: var(--roboto-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    /* line-height: 84px; */
+    color: #FFFFFF;
+    text-shadow: 10px 10px 20px #1539F9;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.redes-sociales{
+    list-style: none;
+    display: flex;
+    margin-right: 58px;
+}
+
+.redes-sociales li{
+    margin: 0 20px;
+}
+
+.redes-sociales a{
+    color: #fff;
+    font-size: 48px;
+}
+
+/*menu principal*/
+
+.menu-principal{
+    background: #1539F9;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu-lista li{
+    margin: 0 40px;
+    padding: 15px 0;
+}
+
+.menu-lista a{
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--roboto-font);
+}
+
+.menu-lista a:hover{
+    border-bottom: 2px solid white;
+}
+
+main{
+    margin-top: 7px;
+}
+
+.calendario-titulo h3{
+    text-align: center;
+    font-family: var(--monserrat);
+}
+
+.calendario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .calendario img{
+    width: 100%;
+    height: 100%;
+} */
+
+/*slider del calendario*/
+
+.slider{
+    position: relative;
+    background: #F7F7F7;
+    /* border: 2px solid red; */
+    padding:  0 10px;
+    overflow: hidden;
+}
+
+.equipo1,.equipo2{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item{
+    display: flex;
+    background: #f7f7f7;
+    padding: 10px 15px;
+    margin: 0 10px;
+    display: none;
+}
+
+.equipos{
+    display: flex;
+    align-items: center;
+   
+}
+
+.partidos{
+    background: #c2c2c2;
+    padding: 20px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.hora{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.left-slide,.right-slide{
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background: #1539F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-top: -15px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.left-slide{
+    left: 10px;
+}
+
+.right-slide{
+    right: 10px;
+}
+
+.slider-active{
+    display: flex;
+}
+
+/*ultimas noticias*/
+
+.noticias-titulos{
+    text-align: center;
+    font-family: var(--monserrat);
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+
+.ultimas-noticias{
+    background: #000;
+    color: #fff;
+    margin-top: 16px;
+    width: 99%;
+    margin: auto;
+}
+
+.ultimas-noticias a{
+    color: #fff;
+}
+
+.ultimas-noticias .grid-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-template-rows: repeat(2,250px);
+    grid-auto-rows: minmax(250px,400px);
+}
+
+.grid-item{
+    width: 100%;
+    height: 100%;
+}
+
+#item1{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* grid-column: 1/3; */
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    
+}
+
+.grid-item article{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item{
+    position: relative;
+}
+
+.noticias-parrafo{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-family: var(--monserrat);
+}
+
+#item1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#item2{
+    grid-column: 4/8;
+    grid-row: 1/2;
+}
+
+#item3{
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+#item4{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    
+}
+
+.noticias-parrafo span{
+    display: inline-block;
+    background: #f00;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.noticias-parrafo h2{
+    background: #000;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.noticias-parrafo p{
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+}
+
+#item4 .noticias-parrafo{
+    left: 5px;
+}
+
+#item4 h2{
+    padding: 10px 5px;
+}
+
+/*multimedia*/
+
+.multimedia{
+    margin-top: 20px;
+    width: 99%;
+    margin: 20px auto auto auto;
+    background: #000;
+    color: #fff;
+    font-family: var(--monserrat);
+}
+
+.multimedia-titulo{
+    text-align: center;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.multimedia .flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.flex-item{
+    margin: 0 10px;
+    padding: 15px 20px;
+}
+
+/*redes responsive*/
+
+aside{
+    width: 95%;
+    margin: 20px auto;
+    background-color: #000;
+    height: 60px;
+    display: none;
+}
+
+.redes-aside{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 3.0em;
+    height: 100%;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.redes-aside a{
+    color: #fff;
+}
+
+.redes-aside li{
+    margin: 0 15px;
+}
+
+/*footer o pie de pagina*/
+
+footer{
+    margin-top: 20px;
+    /* border: 2px solid green; */
+    background: var(--blue-color);
+    font-family: var(--roboto-font);
+    color: #fff;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.acerca-de{
+    list-style: none;
+}
+
+.acerca-de li{
+    margin: 5px 0;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
